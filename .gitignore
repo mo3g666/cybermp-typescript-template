@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+pnpm-debug.log*
+*.log
+
+# CyberMP server binaries, cache and temporary files
+/mp/
+/cache/
+/tmp/
+/crashdumps/
+/logs/
+*.zip
+
+# Build outputs
+/resources/gamemode/
+/resources/gangwar/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDEs
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# OS files
+.DS_Store
+Thumbs.db

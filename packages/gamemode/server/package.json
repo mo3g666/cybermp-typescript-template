@@ -1,0 +1,13 @@
+{
+  "name": "@gamemode/server",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@cybermp/rpc-server": "^0.2.1",
+    "@gamemode/shared": "workspace:*"
+  },
+  "devDependencies": {
+    "@cybermp/server-types": "^3.2.8"
+  }
+}

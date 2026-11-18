@@ -1,0 +1,19 @@
+services:
+  server:
+    container_name: cybermp-gamemode-dev
+    platform: linux/amd64
+    image: ghcr.io/cyber-mp/server:latest
+    stdin_open: true
+    tty: true
+    environment:
+      NODE_ENV: development
+      IS_DOCKER: "true"
+    volumes:
+      - ./server.toml:/cybermp/server.toml
+      - ./resources:/cybermp/resources
+      - ./cache:/cybermp/cache
+      - ./crashdumps:/cybermp/crashdumps
+      - ./logs:/cybermp/logs
+    ports:
+      - 2077:2077/tcp
+      - 2077:2077/udp
